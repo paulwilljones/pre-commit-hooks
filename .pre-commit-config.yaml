@@ -35,6 +35,7 @@
     sha: v1.2.0
     hooks:
     -   id: terraform_fmt
+    -   id: terraform_validate
 -   repo: https://github.com/pre-commit/pre-commit
     sha: v0.15.0
     hooks:
