@@ -1,0 +1,34 @@
+-   id: ansible-lint
+    name: Ansible-lint
+    description: This hook runs ansible-lint.
+    entry: ansible-lint
+    language: python
+    files: \.(yaml|yml)$
+-   id: autopep8
+    name: autopep8
+    entry: autopep8
+    language: python
+    files: \.py$
+    args: [-i]
+-   id: forbid-tabs
+    name: No-tabs checker
+    description: "Forbid files containing tabs to be committed"
+    entry: forbid_tabs
+    language: python
+    files: ''
+    exclude: (Makefile|debian/rules)(\.in)?$
+-   id: remove-tabs
+    name: Tabs remover
+    description: "Replace tabs by whitespaces before committing"
+    entry: remove_tabs
+    language: python
+    args: [ --whitespaces-count, '4' ]
+    files: ''
+    exclude: (Makefile|debian/rules)(\.in)?$
+-   id: terraform_fmt
+    name: Terraform fmt
+    description: Rewrites all Terraform configuration files to a canonical format.
+    entry: terraform_fmt.sh
+    language: script
+    files: \.(tf|tfvars)$
+    exclude: \.+.terraform\/.*$
