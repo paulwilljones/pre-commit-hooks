@@ -36,7 +36,7 @@
     hooks:
     -   id: terraform_fmt
 -   repo: https://github.com/pre-commit/pre-commit
-    sha: v0.15.2
+    sha: v0.16.0
     hooks:
     -   id: validate_config
     -   id: validate_manifest
