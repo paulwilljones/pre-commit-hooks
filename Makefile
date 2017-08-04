@@ -10,7 +10,7 @@ endif
 META_DIR := .make
 SHELL := /usr/bin/env bash
 
-.PHONY: help install-hooks run-hooks
+.PHONY: help install-hooks clean-hooks run-hooks
 
 default: help
 
