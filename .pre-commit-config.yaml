@@ -1,5 +1,6 @@
+repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    sha: v0.9.1
+    sha: v1.1.0
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -13,16 +14,16 @@
     -   id: debug-statements
     -   id: flake8
 -   repo: https://github.com/pre-commit/mirrors-autopep8
-    sha: v1.3.2
+    sha: v1.3.3
     hooks:
     -   id: autopep8
 -   repo: https://github.com/willthames/ansible-lint.git
-    sha: v3.4.13
+    sha: v3.4.16
     hooks:
     -   id: ansible-lint
         files: \.(yaml|yml)$
 -   repo: https://github.com/Lucas-C/pre-commit-hooks
-    sha: v1.0.1
+    sha: v1.1.4
     hooks:
     -   id: forbid-tabs
     -   id: remove-tabs
@@ -30,12 +31,15 @@
     sha: v1.0.3
     hooks:
     -   id: python-bandit-vulnerability-check
+-   repo: https://github.com/asottile/reorder_python_imports.git
+    sha: v0.3.5
+    hooks:
+    -   id: reorder-python-imports
 -   repo: https://github.com/antonbabenko/pre-commit-terraform
     sha: v1.2.0
     hooks:
     -   id: terraform_fmt
 -   repo: https://github.com/pre-commit/pre-commit
-    sha: v0.16.0
+    sha: v1.3.0
     hooks:
-    -   id: validate_config
     -   id: validate_manifest
